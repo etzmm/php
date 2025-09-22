@@ -1,6 +1,12 @@
 <?php
-$name = 'Андрей';
+$name = 'Иван';
 $age = 20;
+$output1 = "Меня зовут: $name";
+$output2 = "Мне $age лет";
+$output3 = "Тип переменной \$name: " . gettype($name);
+$output4 = "Тип переменной \$age: " . gettype($age);
+
+unset($name, $age);
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -12,12 +18,9 @@ $age = 20;
 </head>
 <body>
 	<h1>Переменные и вывод</h1>
-	<?php
-	echo "Меня зовут: $name<br>";
-	echo "Мне $age лет<br>";
-	echo "Тип переменной \$name: " . gettype($name) . "<br>";
-	echo "Тип переменной \$age: " . gettype($age) . "<br>";
-	unset($name, $age);
-	?> 
+	<p><?php echo $output1; ?></p>
+	<p><?php echo $output2; ?></p>
+	<p><?php echo $output3; ?></p>
+	<p><?php echo $output4; ?></p>
 </body>
 </html>
