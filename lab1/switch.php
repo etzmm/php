@@ -18,14 +18,14 @@ $day = 3;
 		case 3:
 		case 4:
 		case 5:
-			echo "<p>Это рабочий день</p>";
+			echo "Это рабочий день";
 			break;
 		case 6:
 		case 7:
-			echo "<p>Это выходной день</p>";
+			echo "Это выходной день";
 			break;
 		default:
-			echo "<p>Неизвестный день</p>";
+			echo "Неизвестный день";
 	}
 	?> 
 </body>
