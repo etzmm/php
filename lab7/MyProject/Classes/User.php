@@ -3,12 +3,21 @@ declare(strict_types=1);
 
 namespace MyProject\Classes;
 
+/**
+ * Класс пользователя.
+ */
 class User
 {
     public string $name;
     public string $login;
     private string $password;
-
+/**
+* Конструктор SuperUser.
+*
+* @param string $name Имя пользователя
+* @param string $login Логин
+* @param string $password Пароль
+*/
     public function __construct(string $name, string $login, string $password)
     {
         $this->name = $name;
