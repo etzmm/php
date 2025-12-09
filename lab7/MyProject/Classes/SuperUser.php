@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace MyProject\Classes;
 
-require_once 'User.php';
 
 /**
  * Класс расширенного пользователя с правами администратора.
@@ -33,4 +32,5 @@ class SuperUser extends User
         echo "<p>Имя: {$this->name}<br>Логин: {$this->login}<br>Роль: {$this->role}</p>";
     }
 }
+
 
