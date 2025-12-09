@@ -8,6 +8,9 @@ namespace MyProject\Classes;
  */
 class User
 {
+    /** @var string Имя */
+    /** @var string Логин */
+    /** @var string Пароль */
     public string $name;
     public string $login;
     private string $password;
@@ -39,5 +42,6 @@ class User
         echo "<p>Пользователь {$this->login} удален.</p>";
     }
 }
+
 
 
