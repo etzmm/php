@@ -25,9 +25,12 @@ class SuperUser extends User
         parent::__construct($name, $login, $password);
         $this->role = $role;
     }
-
+/**
+ * Вывод информации.
+*/
     public function showInfo(): void
     {
         echo "<p>Имя: {$this->name}<br>Логин: {$this->login}<br>Роль: {$this->role}</p>";
     }
 }
+
