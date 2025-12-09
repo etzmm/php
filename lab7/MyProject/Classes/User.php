@@ -4,7 +4,7 @@ declare(strict_types=1);
 namespace MyProject\Classes;
 
 /**
- * Класс пользователя.
+ * Класс обычного пользователя.
  */
 class User
 {
@@ -39,4 +39,5 @@ class User
         echo "<p>Пользователь {$this->login} удален.</p>";
     }
 }
+
 
