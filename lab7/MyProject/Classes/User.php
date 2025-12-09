@@ -12,7 +12,7 @@ class User
     public string $login;
     private string $password;
 /**
-* Конструктор SuperUser.
+* Конструктор User.
 *
 * @param string $name Имя пользователя
 * @param string $login Логин
@@ -24,14 +24,19 @@ class User
         $this->login = $login;
         $this->password = $password;
     }
-
+/**
+* Вывод информации.
+*/
     public function showInfo(): void
     {
         echo "<p>Имя: {$this->name}<br>Логин: {$this->login}</p>";
     }
-
+/**
+* Деструктор.
+*/
     public function __destruct()
     {
         echo "<p>Пользователь {$this->login} удален.</p>";
     }
 }
+
